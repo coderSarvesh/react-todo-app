@@ -39,7 +39,7 @@ const Todo = () => {
                         </button>
                     </div>
 
-                    <div>
+                    <div className='w-screen'>
                         {
                             todolist.map((item, id) => {
                                 return (
