@@ -26,10 +26,10 @@ const Todo = () => {
     return (
         <>
             <div className=''>
-                <h1 className='m-10 text-3xl'>TO-DO LIST</h1>
+                <h1 className='m-10 text-3xl'>To-Do List</h1>
                 <div className='flex flex-col items-center justify-center'>
-                    <div className='flex' >
-                        <input className='px-6 py-4 border-2 text-xl border-gray-400' type="text"
+                    <div className='flex border-2 text-xl border-gray-400' >
+                        <input className='px-6 py-4 text-xl border-gray-400' type="text"
                             placeholder="Enter A Todo"
                             value={input}
                             onChange={(e) => setInput(e.target.value)}
@@ -39,14 +39,14 @@ const Todo = () => {
                         </button>
                     </div>
 
-                    <div className='bg-gray-300'>
+                    <div>
                         {
                             todolist.map((item, id) => {
                                 return (
-                                    <div className='flex' key={id}>
-                                        <h1>{item}</h1>
+                                    <div className='flex mt-4 py-2 px-9 bg-slate-300' key={id}>
+                                        <h1 className='text-2xl font-medium'>{item}</h1>
                                         <button onClick={() => deleteTodo(id)}>
-                                            <FaTimes className="m-1" />
+                                            <FaTimes className="ml-36 m-1 text-xl" />
                                         </button>
                                     </div>
                                 )
