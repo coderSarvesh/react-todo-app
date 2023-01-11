@@ -43,7 +43,7 @@ const Todo = () => {
                         {
                             todolist.map((item, id) => {
                                 return (
-                                    <div className='flex justify-between mt-4 mx-1 w-screen md:w-screen md:mx-8 bg-slate-300' key={id}>
+                                    <div className='flex justify-between mt-4 mx-3 w-screen md:w-screen md:mx-8 bg-slate-300' key={id}>
                                         <h1 className='text-2xl font-medium'>{item}</h1>
                                         <button className='ml-28 mr-0' onClick={() => deleteTodo(id)}>
                                             <FaTimes className="m-1 text-xl" />
